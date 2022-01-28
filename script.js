@@ -100,7 +100,7 @@ document.getElementById('lg3').innerHTML = project1.projectLanguages.lg3;
 
 const project1m = new Project('Tonic', "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", './Exported_elements/Images/Snapshoot_Portfolio_1st_card.png', {
   lg1: 'html', lg2: 'css', lg3: 'javaScript', lg4: 'github', lg5: 'ruby', lg6: ' bootstraps',
-},
+}, './Exported_elements/Images/Snapshoot_Portfolio_1st_card.png', 
 'https://thi-ponce.github.io/Portfolio-setup-and-mobile-skeleton/', 'https://github.com/Thi-Ponce/Portfolio-setup-and-mobile-skeleton');
 
 document.getElementById('title1-m').innerHTML = project1m.projectName;
@@ -236,7 +236,7 @@ document.getElementById('lg2-4').innerHTML = project4.projectLanguages.lg2;
 document.getElementById('lg3-4').innerHTML = project4.projectLanguages.lg3;
 
 // Modal 4 obj
-const project4m = new Project('Multi-Post Stories', "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", './Exported_elements/Images/Snapshoot_Portfolio_4.png', './Exported_elements/Images/Snapshoot_Portfolio_4.png' {
+const project4m = new Project('Multi-Post Stories', "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", './Exported_elements/Images/Snapshoot_Portfolio_4.png', {
   lg1: 'html', lg2: 'css', lg3: 'javaScript', lg4: 'github', lg5: 'ruby', lg6: ' bootstraps',
 },
 'https://thi-ponce.github.io/Portfolio-setup-and-mobile-skeleton/', 'https://github.com/Thi-Ponce/Portfolio-setup-and-mobile-skeleton');
@@ -272,7 +272,7 @@ function isEmail(email) {
   return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
-function setErorFor(input, message) {
+function setErrorFor(input, message) {
   const errorMessage = document.getElementById('error-msg');
   errorMessage.innerText = message;
   errorMessage.classList.add('active');
